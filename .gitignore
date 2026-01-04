@@ -1,0 +1,38 @@
+# --- CMake ---
+CMakeLists.txt.user
+CMakeCache.txt
+CMakeFiles/
+CMakeScripts/
+Testing/
+Makefile
+cmake_install.cmake
+install_manifest.txt
+compile_commands.json
+CTestTestfile.cmake
+_deps/
+CMakeUserPresets.json
+
+# --- Compilación y Salida ---
+/build/
+*.pdb
+*.lib
+*.ilk
+*.exp
+*.obj
+
+# --- Formatos de Plugin (Salida final) ---
+*.vst3/
+*.component/
+*.aaxplugin/
+*.vst/
+
+# --- IDEs y Sistema ---
+.vscode/
+.DS_Store
+Thumbs.db
+*.swp
+
+# --- Seguridad (NO SUBIR NUNCA) ---
+*.p12
+*.pfx
+*.key
