@@ -10,7 +10,7 @@
 
 ---
 
-## 📸 Plugin view
+## 🌋 Plugin View / Vista del Plugin
 
 | Bàrbar Mode (English) | Mode Terra (Català) |
 | :---: | :---: |
@@ -18,7 +18,7 @@
 
 ---
 
-## 🌋 Features / Característiques
+## 🚀 Features / Característiques
 
 ### English (Bàrbar Mode)
 * **"Foc" Saturation:** `tanh` based soft-clipping for tube-like response.
@@ -36,12 +36,19 @@
 
 ---
 
-## 🚀 Installation / Instal·lació
+## 🛠️ Installation / Instal·lació
 
-1. Clone the repository.
-2. Ensure the `assets/` folder contains all required images.
-3. Open `CMakeLists.txt` and build using your preferred IDE.
-4. **Important (Projucer):** If using Projucer, you must include `<JuceHeader.h>` in your source files.
+### English
+1. **Clone the repository:** Download the source code to your machine.
+2. **Assets check:** Ensure the `assets/` folder contains all required images.
+3. **Build:** Open `CMakeLists.txt` and build using your preferred IDE (Visual Studio, Xcode, CLion).
+4. **Important (Projucer):** If using Projucer, you must include `<JuceHeader.h>` in your source files manually.
+
+### Català
+1. **Clona el repositori:** Descarrega el codi font a la teva màquina.
+2. **Verificació d'actius:** Assegura't que la carpeta `assets/` conté totes les imatges necessàries.
+3. **Compilació:** Obre el `CMakeLists.txt` i compila utilitzant el teu IDE preferit (Visual Studio, Xcode, CLion).
+4. **Important (Projucer):** Si utilitzes Projucer, has d'incloure manualment `#include <JuceHeader.h>` als teus fitxers de font.
 
 ---
 *Developed by Albert Phase Lab - 2026*
