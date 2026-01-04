@@ -4,9 +4,9 @@
 
 # 🔥 Garrotxeta Distortion
 
-**Garrotxeta** is a professional high-gain preamp plugin inspired by the raw volcanic power of the Garrotxa region. Developed by **Albert Phase Lab**, it delivers modern, aggressive saturation with a unique bilingual interface and native oversampling for crystal-clear distortion.
+**Garrotxeta** is a professional high-gain preamp plugin inspired by the raw volcanic power of the Garrotxa region. Developed by **AlbertPhaseLab**, it delivers modern, aggressive saturation with a unique bilingual interface and native oversampling for crystal-clear distortion.
 
-**Garrotxeta** és un plugin de distorsió d'alt guany (Preamp) professional inspirat en la força volcànica de la Garrotxa. Desenvolupat per **Albert Phase Lab**, ofereix una saturació moderna i agressiva amb una interfície bilingüe única i sobremostreig natiu.
+**Garrotxeta** és un plugin de distorsió d'alt guany (Preamp) professional inspirat en la força volcànica de la Garrotxa. Desenvolupat per **AlbertPhaseLab**, ofereix una saturació moderna i agressiva amb una interfície bilingüe única i sobremostreig natiu.
 
 ---
 
@@ -39,16 +39,16 @@
 ## 🛠️ Installation / Instal·lació
 
 ### English
-1. **Clone the repository:** Download the source code to your machine.
+1. **Clone the repository:** Download the source code to your PC.
 2. **Assets check:** Ensure the `assets/` folder contains all required images.
 3. **Build:** Open `CMakeLists.txt` and build using your preferred IDE (Visual Studio, Xcode, CLion).
 4. **Important (Projucer):** If using Projucer, you must include `<JuceHeader.h>` in your source files manually.
 
 ### Català
-1. **Clona el repositori:** Descarrega el codi font a la teva màquina.
+1. **Clona el repositori:** Descarrega el codi font al teu PC.
 2. **Verificació d'actius:** Assegura't que la carpeta `assets/` conté totes les imatges necessàries.
 3. **Compilació:** Obre el `CMakeLists.txt` i compila utilitzant el teu IDE preferit (Visual Studio, Xcode, CLion).
 4. **Important (Projucer):** Si utilitzes Projucer, has d'incloure manualment `#include <JuceHeader.h>` als teus fitxers de font.
 
 ---
-*Developed by Albert Phase Lab - 2026*
+*Developed by AlbertPhaseLab - 2026*
