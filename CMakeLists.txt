@@ -12,16 +12,13 @@ set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 project(Garrotxeta VERSION ${CURRENT_VERSION})
 
 # --- JUCE Framework Setup ---
-# Ensure the path to the JUCE folder is correct relative to this file
 add_subdirectory(modules/JUCE)
 
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 if(APPLE)
-    # Set deployment target for macOS compatibility
     set(CMAKE_OSX_DEPLOYMENT_TARGET "10.15" CACHE STRING "" FORCE) 
-    # Build for both Intel (x86_64) and Apple Silicon (arm64)
     set(CMAKE_OSX_ARCHITECTURES "x86_64;arm64" CACHE STRING "" FORCE)
 endif()
 
@@ -41,35 +38,33 @@ juce_add_plugin("${PROJECT_NAME}"
 )
 
 # --- Source Files Section ---
-# Automatically find all .cpp and .h files in the /source directory
 file(GLOB_RECURSE SourceFiles CONFIGURE_DEPENDS
     "${CMAKE_CURRENT_SOURCE_DIR}/source/*.cpp"
     "${CMAKE_CURRENT_SOURCE_DIR}/source/*.h"
 )
 target_sources("${PROJECT_NAME}" PRIVATE ${SourceFiles})
 
-# --- Assets & Binary Data Section ---
-# List all images required by the plugin UI and the README
+# --- Assets & Binary Data Section (Synced with your assets folder) ---
 set(ASSET_FILES
     "${CMAKE_CURRENT_SOURCE_DIR}/assets/background.png"
-    "${CMAKE_CURRENT_SOURCE_DIR}/assets/knob.png"
     "${CMAKE_CURRENT_SOURCE_DIR}/assets/garrotxeta.png"
-    "${CMAKE_CURRENT_SOURCE_DIR}/assets/garrotxeta_barbar.jpg"
+    "${CMAKE_CURRENT_SOURCE_DIR}/assets/knob.png"
     "${CMAKE_CURRENT_SOURCE_DIR}/assets/garrotxeta_catala.jpg"
+    "${CMAKE_CURRENT_SOURCE_DIR}/assets/garrotxeta_barbar.jpg"
     "${CMAKE_CURRENT_SOURCE_DIR}/assets/albertphaselab_logo.jpg"
 )
 
-# File Existence Validation: Alert if any asset is missing before compilation
+# Validation: Warn if an asset file is missing
 foreach(FILE_PATH ${ASSET_FILES})
     if(NOT EXISTS ${FILE_PATH})
         message(WARNING "MISSING ASSET: File not found at ${FILE_PATH}")
     endif()
 endforeach()
 
-# Generate the 'BinaryData' C++ files from the listed assets
+# Generate C++ BinaryData from assets
 juce_add_binary_data(AudioPluginData SOURCES ${ASSET_FILES})
 
-# Link the generated binary data to the main plugin target
+# Link binary data to the plugin target
 target_link_libraries("${PROJECT_NAME}" PRIVATE AudioPluginData)
 
 # --- Compiler Configuration ---
@@ -80,11 +75,9 @@ target_compile_definitions("${PROJECT_NAME}" PRIVATE
     VERSION="${CURRENT_VERSION}"
 )
 
-# Add the /source directory to the include path
 target_include_directories("${PROJECT_NAME}" PRIVATE "${CMAKE_CURRENT_SOURCE_DIR}/source")
 
 # --- JUCE Module Linking ---
-# Link required JUCE modules and recommended optimization flags
 target_link_libraries("${PROJECT_NAME}" PRIVATE
     juce::juce_audio_utils
     juce::juce_audio_processors

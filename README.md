@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="albertphaselab_logo.jpg" width="400">
+  <img src="assets/albertphaselab_logo.jpg" width="400">
 </p>
 
 # 🔥 Garrotxeta Distortion
@@ -10,11 +10,11 @@
 
 ---
 
-## 📸 Screenshots / Captures de pantalla
+## 📸 Plugin view
 
 | Bàrbar Mode (English) | Mode Terra (Català) |
 | :---: | :---: |
-| ![Garrotxeta Barbar](garrotxeta_barbar.jpg) | ![Garrotxeta Catala](garrotxeta_catala.jpg) |
+| ![Garrotxeta Barbar](assets/garrotxeta_barbar.jpg) | ![Garrotxeta Catala](assets/garrotxeta_catala.jpg) |
 
 ---
 
@@ -36,19 +36,12 @@
 
 ---
 
-## 🛠️ Technical Specs / Especificacions Tècniques
-
-* **Company:** Albert Phase Lab
-* **Framework:** C++ / JUCE 7+
-* **Formats:** VST3, AU, Standalone (64-bit)
-* **OS Support:** Windows & macOS (Intel/Apple Silicon)
-
 ## 🚀 Installation / Instal·lació
 
 1. Clone the repository.
-2. Ensure the `assets/` folder contains all required images (`background.png`, `knob.png`, etc.).
-3. Open `CMakeLists.txt` and build using your preferred IDE (Visual Studio, Xcode, CLion).
-4. **Important:** If using Projucer, remember to include `<JuceHeader.h>` in your source files.
+2. Ensure the `assets/` folder contains all required images.
+3. Open `CMakeLists.txt` and build using your preferred IDE.
+4. **Important (Projucer):** If using Projucer, you must include `<JuceHeader.h>` in your source files.
 
 ---
 *Developed by Albert Phase Lab - 2026*
