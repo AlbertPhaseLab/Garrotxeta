@@ -4,6 +4,11 @@
 
 # 🔥 Garrotxeta Distortion
 
+> [!IMPORTANT]
+> **TRIAL VERSION / VERSIÓ DE MOSTRA**
+> This repository contains the trial version of the **Garrotxa** plugin. 
+> Aquest repositori conté la versió de mostra del plugin **Garrotxa**.
+
 **Garrotxeta** is a professional high-gain preamp plugin inspired by the raw volcanic power of the Garrotxa region. Developed by **AlbertPhaseLab**, it delivers modern, aggressive saturation with a unique bilingual interface and native oversampling for crystal-clear distortion.
 
 **Garrotxeta** és un plugin de distorsió d'alt guany (Preamp) professional inspirat en la força volcànica de la Garrotxa. Desenvolupat per **AlbertPhaseLab**, ofereix una saturació moderna i agressiva amb una interfície bilingüe única i sobremostreig natiu.
@@ -49,6 +54,16 @@
 2. **Verificació d'actius:** Assegura't que la carpeta `assets/` conté totes les imatges necessàries.
 3. **Compilació:** Obre el `CMakeLists.txt` i compila utilitzant el teu IDE preferit (Visual Studio, Xcode, CLion).
 4. **Important (Projucer):** Si utilitzes Projucer, has d'incloure manualment `#include <JuceHeader.h>` als teus fitxers de font.
+
+---
+
+## ⚖️ License / Llicència
+
+### English
+This project is released under the **MIT License**. However, please note that this repository specifically hosts the **trial version** of the full **Garrotxa** plugin.
+
+### Català
+Aquest projecte es publica sota la **Llicència MIT**. No obstant això, tingueu en compte que aquest repositori allotja específicament la **versió de mostra** del plugin complet **Garrotxa**.
 
 ---
 *Developed by AlbertPhaseLab - 2026*
